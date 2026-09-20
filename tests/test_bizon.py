@@ -2,6 +2,8 @@ import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+pytestmark = pytest.mark.skip(reason="Сайт нестабилен, тесты переносим на saucedemo")
+
 
 DISH_URL = "https://bison44.ru/kostroma/popular/v-syrnom-lavashe-kurinaya"
 
