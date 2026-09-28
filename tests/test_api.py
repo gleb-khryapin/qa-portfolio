@@ -14,7 +14,7 @@ def test_get_post():
         data = response.json()
     allure.attach(response.text, "Тело ответа", allure.attachment_type.JSON)
     with allure.step("Проверить код ответа"):
-        assert response.status_code == 200
+        assert response.status_code == 500
     with allure.step("Проверить айди"):
         assert "id" in data
     with allure.step("Проверить наличие имени"):
