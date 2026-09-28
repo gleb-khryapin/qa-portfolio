@@ -1,3 +1,5 @@
+![tests](https://github.com/zxc6451000-7/qa-portfolio/actions/workflows/tests.yml/badge.svg)
+
 # QA Portfolio · Глеб Хряпин
 
 Начинающий тестировщик, студент 4 курса по специальности «Информационные системы и программирование».
