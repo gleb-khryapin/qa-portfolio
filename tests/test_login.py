@@ -3,14 +3,20 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from pages.login_page import LoginPage
+from pages.inventory_page import InventoryPage
+
 
 def test_success(driver):
+    inv_page = InventoryPage(driver)
     page = LoginPage(driver)
     page.open()
     page.login("standard_user", "secret_sauce")
-    title = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".title")))
-    assert "Products" in title.text
+    check_title = inv_page.get_title()
+    check_count = inv_page.get_count()
+    assert "Products" in check_title
+    assert check_count == 6
     assert "inventory.html" in driver.current_url
+
 
 @pytest.mark.parametrize("username, password, expected_error",[
     ("locked_out_user", "secret_sauce", "locked out"),   

@@ -48,7 +48,7 @@ def test_debug_dish_page(driver):
     driver.save_screenshot("debug_dish.png")
 
     titles = driver.find_elements(By.CSS_SELECTOR, ".product-options__title")
-    print("\nЗАГОЛОВКИ:", [t.text for t in titles])
+    print("\n ЗАГАЛОВКИ:", [t.text for t in titles])
 
     calories = driver.find_elements(By.CSS_SELECTOR, ".calories__value")
     print("КАЛОРИИ:", len(calories), [c.text for c in calories])
