@@ -1,4 +1,4 @@
-![tests](https://github.com/zxc6451000-7/qa-portfolio/actions/workflows/tests.yml/badge.svg)
+![tests](https://github.com/gleb-khryapin/qa-portfolio/actions/workflows/tests.yml/badge.svg)
 
 # QA Portfolio · Глеб Хряпин
 
@@ -21,7 +21,7 @@ Python 3.13 · pytest · Selenium 4 · requests · Allure
 ## Как запустить
 
 ```bash
-git clone https://github.com/zxc6451000-7/qa-portfolio.git
+git clone https://github.com/gleb-khryapin/qa-portfolio.git
 cd qa-portfolio
 python -m venv venv
 venv\Scripts\activate
