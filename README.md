@@ -12,11 +12,13 @@
 | `tests/test_login.py` | UI-автотесты входа: позитивный сценарий и 4 негативных через параметризацию |
 | `tests/test_api.py` | API-тесты: GET, проверка 404, POST с телом, параметризация |
 | `pages/login_page.py` | Page Object страницы входа: локаторы и действия |
+| `pages/inventory_page.py` | Page Object каталога товаров |
+| `.github/workflows/tests.yml` | CI: прогон тестов при каждом пуше и pull request |
 | `conftest.py` | Фикстура браузера: запуск и гарантированное закрытие |
 
 ## Стек
 
-Python 3.13 · pytest · Selenium 4 · requests · Allure
+Python 3.13 · pytest · Selenium 4 · requests · Allure · GitHub Actions
 
 ## Как запустить
 
@@ -53,9 +55,3 @@ allure serve allure-results
 - Баг-репорты с локализацией до фронтенда или бэкенда через DevTools
 - Тест-план и применение шести техник тест-дизайна по документации REST API
 - Postman, Swagger, SQL для проверки данных
-
-## В работе
-
-- [ ] GitHub Actions: прогон тестов при каждом пуше
-- [ ] Page Object для остальных страниц
-- [ ] Linux: чтение логов
